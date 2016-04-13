@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="NoteCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NoteCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGR-O5-TPW">
+                        <rect key="frame" x="8" y="8" width="304" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="D2g-IT-Hwq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xo5-Pw-seD">
+                        <rect key="frame" x="8" y="50" width="304" height="28.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28.5" id="G6u-LR-R6b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AGR-O5-TPW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="5hs-sy-RVQ"/>
+                    <constraint firstItem="xo5-Pw-seD" firstAttribute="top" secondItem="AGR-O5-TPW" secondAttribute="bottom" constant="5" id="EJq-PV-f2v"/>
+                    <constraint firstItem="xo5-Pw-seD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NyZ-K7-QJ5"/>
+                    <constraint firstItem="AGR-O5-TPW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="T3W-3z-tkB"/>
+                    <constraint firstItem="xo5-Pw-seD" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ZNR-lf-FgO"/>
+                    <constraint firstItem="AGR-O5-TPW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="g7A-yb-NFh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelContent" destination="xo5-Pw-seD" id="11B-GL-MJH"/>
+                <outlet property="labelTitle" destination="AGR-O5-TPW" id="Fpr-wt-FK0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

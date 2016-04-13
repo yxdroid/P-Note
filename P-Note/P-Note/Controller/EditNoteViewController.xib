@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditNoteViewController">
+            <connections>
+                <outlet property="edtContent" destination="92g-B6-duE" id="9oN-kf-msw"/>
+                <outlet property="edtTitle" destination="25A-Vn-XaJ" id="tpB-UO-FSC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入标题" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="25A-Vn-XaJ">
+                    <rect key="frame" x="10" y="10" width="300" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BwJ-ut-Q6t"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="92g-B6-duE">
+                    <rect key="frame" x="10" y="60" width="300" height="187"/>
+                    <color key="backgroundColor" red="0.91897062110000005" green="0.91897062110000005" blue="0.91897062110000005" alpha="0.14644204721362228" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="187" id="BBx-hh-Xue"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="25A-Vn-XaJ" secondAttribute="trailing" constant="10" id="8EB-GF-wL9"/>
+                <constraint firstItem="92g-B6-duE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Go4-3t-fUW"/>
+                <constraint firstItem="25A-Vn-XaJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="VuF-dx-3FX"/>
+                <constraint firstItem="25A-Vn-XaJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="YLV-7F-0GJ"/>
+                <constraint firstItem="92g-B6-duE" firstAttribute="trailing" secondItem="25A-Vn-XaJ" secondAttribute="trailing" id="ZPS-9c-khc"/>
+                <constraint firstItem="92g-B6-duE" firstAttribute="top" secondItem="25A-Vn-XaJ" secondAttribute="bottom" constant="10" id="rdj-qM-as1"/>
+            </constraints>
+            <point key="canvasLocation" x="201" y="277"/>
+        </view>
+    </objects>
+</document>

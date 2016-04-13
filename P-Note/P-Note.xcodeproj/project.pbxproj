@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248DC94B40958569E607312E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAD8DAE085D340FE216AC64 /* libPods.a */; };
+		AA3443951CB8DF01003803B2 /* EditNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3443931CB8DF01003803B2 /* EditNoteViewController.m */; };
+		AA3443961CB8DF01003803B2 /* EditNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3443941CB8DF01003803B2 /* EditNoteViewController.xib */; };
+		AA34439C1CB9013A003803B2 /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA34439A1CB9013A003803B2 /* NoteCell.m */; };
+		AA34439D1CB9013A003803B2 /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA34439B1CB9013A003803B2 /* NoteCell.xib */; };
+		AA3443B01CB9133C003803B2 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3443AE1CB9133C003803B2 /* SettingViewController.m */; };
+		AA3B4FF41CB7B1A4009DC771 /* AddFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3B4FF31CB7B1A4009DC771 /* AddFolderView.xib */; };
+		AA556B371CBBA41C00D229BD /* PwdDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA556B361CBBA41C00D229BD /* PwdDialogView.m */; };
+		AA556B391CBBA42900D229BD /* PwdDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA556B381CBBA42900D229BD /* PwdDialogView.xib */; };
+		AAC84DDE1CB6599A00FD49DD /* FolderNoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC84DDD1CB6599A00FD49DD /* FolderNoteCell.xib */; };
+		BCBFD085088B097FE9940CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBFDA0BA2EE0F6EAC6591EE /* LaunchScreen.storyboard */; };
+		BCBFD10AE70E9C690D13962A /* PwdInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD22BE88A40B8739AA45E /* PwdInputView.m */; };
+		BCBFD1165E8591D3F622F6D7 /* AddFolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD7EBFC527595F8EE1AB3 /* AddFolderView.m */; };
+		BCBFD11D33B4364C4F92DC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBFD0CAA564C5E01212C883 /* Main.storyboard */; };
+		BCBFD17187D9A531BA92D48D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD51A30F4E2AA2F62CB1A /* BaseViewController.m */; };
+		BCBFD224FAE09AF5F1711437 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDA2666ECBFE3CE696344 /* StringUtils.m */; };
+		BCBFD355F95F32AF735B40F8 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD9DAD12B0565E020CC5A /* Note.m */; };
+		BCBFD40B4E935BA16FB040B9 /* NoteFolderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDBF103B57F0EDCE16BCC /* NoteFolderHelper.m */; };
+		BCBFD4EE09CF8970B4AA4B5B /* P_NoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDBF68989A1959BCB7341 /* P_NoteTests.m */; };
+		BCBFD55FBB610B0FB82BBD2C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBFD1224AD34507D330AF34 /* Info.plist */; };
+		BCBFD5E282CDC79E27401AC8 /* P_NoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDA2481C4833FF06F2E1F /* P_NoteUITests.m */; };
+		BCBFD615E795D4F7232C6E79 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBFDB2A5EEDFF5882C533F6 /* Info.plist */; };
+		BCBFD77D660EE4DBF9B86AD9 /* NotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD86B7953C55770E5A71F /* NotesListViewController.m */; };
+		BCBFD7F474754EF49EA59263 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD8D52DA9BB0347A59F8B /* MBProgressHUD.m */; };
+		BCBFD8C7B61854A09637D06D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBFDEDBDC850036756E3EDB /* Assets.xcassets */; };
+		BCBFD9F5D8E89ADCF62487D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBFDC9EFD4E61F59F122E20 /* Info.plist */; };
+		BCBFDA2A73D35C76742538E1 /* DBConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD61724F4C1533731949E /* DBConfig.m */; };
+		BCBFDB3D586E5E287C1FB06B /* NoteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDB05508AF6D126AD971F /* NoteHelper.m */; };
+		BCBFDC1EB64197F06275D55B /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDF5B5954F0BE75224FF8 /* DBHelper.m */; };
+		BCBFDCC4A7848D8922E74DEA /* NoteFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDCA7D03CA491DD66F01C /* NoteFolder.m */; };
+		BCBFDCE20973006DD0EEF90C /* FolderNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDC4B4B47BA8E38960BBC /* FolderNoteCell.m */; };
+		BCBFDCEA5754021C1F694F15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDEA8D20F246E97F9DD35 /* main.m */; };
+		BCBFDD007B9AD6CFF586CEB4 /* UserDefaultsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD059ADA4E05C26DAC6F7 /* UserDefaultsUtils.m */; };
+		BCBFDD78F92F5270DC165F91 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDABB4021051D983A37B8 /* Tools.m */; };
+		BCBFDD9E7F57EB81B698B96C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDB63FAA5CF5907F1C15D /* AppDelegate.m */; };
+		BCBFDDCD80540BE87AE82AA7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDF63BE39C50205B04480 /* MainViewController.m */; };
+		BCBFDEB2357819355D55E939 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD8B80131B8C61CCE5A6A /* AboutViewController.m */; };
+		BCBFDEFED0DBC7E12B0057CB /* FDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFDA88A2B03F4B2ED37807 /* FDAlertView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCBFD08EA071FC6ED2423221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCBFD17F759EFF8A663CD8AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCBFD8269A5254697BBDBFFE;
+			remoteInfo = "P-Note";
+		};
+		BCBFDB0F9FAB9E71F4AD256B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCBFD17F759EFF8A663CD8AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCBFD8269A5254697BBDBFFE;
+			remoteInfo = "P-Note";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FAD8DAE085D340FE216AC64 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E4AEE7D4DA9AC62612A9B7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AA3443921CB8DF01003803B2 /* EditNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditNoteViewController.h; sourceTree = "<group>"; };
+		AA3443931CB8DF01003803B2 /* EditNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditNoteViewController.m; sourceTree = "<group>"; };
+		AA3443941CB8DF01003803B2 /* EditNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditNoteViewController.xib; sourceTree = "<group>"; };
+		AA3443991CB9013A003803B2 /* NoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCell.h; sourceTree = "<group>"; };
+		AA34439A1CB9013A003803B2 /* NoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCell.m; sourceTree = "<group>"; };
+		AA34439B1CB9013A003803B2 /* NoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
+		AA3443AD1CB9133C003803B2 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		AA3443AE1CB9133C003803B2 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		AA3B4FF21CB74777009DC771 /* P-Note-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "P-Note-Prefix.pch"; sourceTree = "<group>"; };
+		AA3B4FF31CB7B1A4009DC771 /* AddFolderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFolderView.xib; sourceTree = "<group>"; };
+		AA556B351CBBA41C00D229BD /* PwdDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwdDialogView.h; sourceTree = "<group>"; };
+		AA556B361CBBA41C00D229BD /* PwdDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwdDialogView.m; sourceTree = "<group>"; };
+		AA556B381CBBA42900D229BD /* PwdDialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PwdDialogView.xib; sourceTree = "<group>"; };
+		AAC84DDD1CB6599A00FD49DD /* FolderNoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FolderNoteCell.xib; sourceTree = "<group>"; };
+		B354989D73BA540C6C945BE3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BCBFD058869AF40AD53BF2D0 /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		BCBFD059ADA4E05C26DAC6F7 /* UserDefaultsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsUtils.m; sourceTree = "<group>"; };
+		BCBFD1224AD34507D330AF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		BCBFD1BA7C0E1B0E96767CF7 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		BCBFD1E75E3701CFF5949BC6 /* FolderNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderNoteCell.h; sourceTree = "<group>"; };
+		BCBFD1F2BAAD386B014C9F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCBFD22BE88A40B8739AA45E /* PwdInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwdInputView.m; sourceTree = "<group>"; };
+		BCBFD33F072B6D35490BFEB4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BCBFD41A200E88EF0A715CCD /* DBConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConfig.h; sourceTree = "<group>"; };
+		BCBFD42FBC5FEA0AE89405A5 /* AddFolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFolderView.h; sourceTree = "<group>"; };
+		BCBFD4F7E2425F5F955472A9 /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		BCBFD511C6362375CD6AA79D /* FDAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAlertView.h; sourceTree = "<group>"; };
+		BCBFD51A30F4E2AA2F62CB1A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		BCBFD5DFAF88E813A7E5D254 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		BCBFD61724F4C1533731949E /* DBConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConfig.m; sourceTree = "<group>"; };
+		BCBFD6F08C417B2A643EE2D7 /* P-NoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "P-NoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBFD7EBFC527595F8EE1AB3 /* AddFolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFolderView.m; sourceTree = "<group>"; };
+		BCBFD86B7953C55770E5A71F /* NotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesListViewController.m; sourceTree = "<group>"; };
+		BCBFD899040399FE43F9D481 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BCBFD8B80131B8C61CCE5A6A /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		BCBFD8D52DA9BB0347A59F8B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		BCBFD8DCDF88EF26214D1D93 /* NoteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteHelper.h; sourceTree = "<group>"; };
+		BCBFD9DAD12B0565E020CC5A /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		BCBFD9FC52669CEA2374F13C /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		BCBFDA2481C4833FF06F2E1F /* P_NoteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P_NoteUITests.m; sourceTree = "<group>"; };
+		BCBFDA2666ECBFE3CE696344 /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		BCBFDA80E6EA3C0A9CADBEA1 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		BCBFDA88A2B03F4B2ED37807 /* FDAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAlertView.m; sourceTree = "<group>"; };
+		BCBFDABB4021051D983A37B8 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		BCBFDAC290167FFDFCEB7DCC /* P-Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "P-Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBFDB05508AF6D126AD971F /* NoteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteHelper.m; sourceTree = "<group>"; };
+		BCBFDB102869FE126961C099 /* NoteFolderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteFolderHelper.h; sourceTree = "<group>"; };
+		BCBFDB2A5EEDFF5882C533F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		BCBFDB3E51BD8F05F7B8F0AC /* UserDefaultsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsUtils.h; sourceTree = "<group>"; };
+		BCBFDB63FAA5CF5907F1C15D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCBFDBF103B57F0EDCE16BCC /* NoteFolderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteFolderHelper.m; sourceTree = "<group>"; };
+		BCBFDBF68989A1959BCB7341 /* P_NoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P_NoteTests.m; sourceTree = "<group>"; };
+		BCBFDC48DDED0014846ABADF /* P-NoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "P-NoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBFDC4B4B47BA8E38960BBC /* FolderNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderNoteCell.m; sourceTree = "<group>"; };
+		BCBFDC9EFD4E61F59F122E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		BCBFDCA7D03CA491DD66F01C /* NoteFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteFolder.m; sourceTree = "<group>"; };
+		BCBFDD34FD11CBD329D2FA5E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		BCBFDD7E65B6B8D2116031F5 /* NoteFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteFolder.h; sourceTree = "<group>"; };
+		BCBFDEA8D20F246E97F9DD35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCBFDEDBDC850036756E3EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCBFDF092526B20F48C98E7C /* PwdInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwdInputView.h; sourceTree = "<group>"; };
+		BCBFDF480CD9D5E89E8368E7 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		BCBFDF5B5954F0BE75224FF8 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		BCBFDF63BE39C50205B04480 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BCBFDF63F4EA2D43EE75CEDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCBFDF908B8C5CB99A8CBBE7 /* NotesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesListViewController.h; sourceTree = "<group>"; };
+		BCBFDF9FDC02EAEAC1C78370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCBFD0FE3EA9EE8B98D3A9B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBFD2B56C93FE518975A7C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBFDC3D90263D17DA8C82A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248DC94B40958569E607312E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		960C567A2A0CFF451A49F8F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B354989D73BA540C6C945BE3 /* Pods.debug.xcconfig */,
+				80E4AEE7D4DA9AC62612A9B7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCBFD0230A1FC8B525BB0DB6 = {
+			isa = PBXGroup;
+			children = (
+				BCBFD6CD68A7D6455703D88E /* Products */,
+				BCBFD577DAF562A286CC00A7 /* P-Note */,
+				BCBFDE0D2B5F3B95C7FE8BC8 /* P-NoteTests */,
+				BCBFD99592C94D068748E6A2 /* P-NoteUITests */,
+				960C567A2A0CFF451A49F8F1 /* Pods */,
+				E7B6AA1332C641826B7EFF32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCBFD1D6E6CBDDCE6565DDD5 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFD51A30F4E2AA2F62CB1A /* BaseViewController.m */,
+				BCBFDD34FD11CBD329D2FA5E /* BaseViewController.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		BCBFD20A14715FD6D90CF355 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFD25812AB48EA9DC384AD /* const */,
+				BCBFDC2ED23855A2224DB380 /* utils */,
+				BCBFD5E9BCE4EECD2D84522D /* db */,
+				BCBFD48598AD669736E4B62F /* view */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		BCBFD25812AB48EA9DC384AD /* const */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFD058869AF40AD53BF2D0 /* Colors.h */,
+				BCBFD4F7E2425F5F955472A9 /* Screen.h */,
+			);
+			path = const;
+			sourceTree = "<group>";
+		};
+		BCBFD2C7BFC4E4234DB197D8 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFD899040399FE43F9D481 /* MBProgressHUD.h */,
+				BCBFD8D52DA9BB0347A59F8B /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		BCBFD446B3F050CA4F52A362 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B4FF21CB74777009DC771 /* P-Note-Prefix.pch */,
+				BCBFDEA8D20F246E97F9DD35 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCBFD48598AD669736E4B62F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFD2C7BFC4E4234DB197D8 /* MBProgressHUD */,
+				BCBFD8014C2925FC26BDE1AE /* PwdDialog */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BCBFD577DAF562A286CC00A7 /* P-Note */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFDC9EFD4E61F59F122E20 /* Info.plist */,
+				BCBFDEDBDC850036756E3EDB /* Assets.xcassets */,
+				BCBFDA0BA2EE0F6EAC6591EE /* LaunchScreen.storyboard */,
+				BCBFD446B3F050CA4F52A362 /* Supporting Files */,
+				BCBFDF63F4EA2D43EE75CEDE /* AppDelegate.h */,
+				BCBFDB63FAA5CF5907F1C15D /* AppDelegate.m */,
+				BCBFD0CAA564C5E01212C883 /* Main.storyboard */,
+				BCBFDCCE11FEAD63F7CD2E9B /* Model */,
+				BCBFDAC8470768992918244C /* View */,
+				BCBFDFF3605D22A796E0DEEB /* Controller */,
+				BCBFD20A14715FD6D90CF355 /* Expand */,
+			);
+			path = "P-Note";
+			sourceTree = "<group>";
+		};
+		BCBFD5E9BCE4EECD2D84522D /* db */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFDB05508AF6D126AD971F /* NoteHelper.m */,
+				BCBFD8DCDF88EF26214D1D93 /* NoteHelper.h */,
+				BCBFDA80E6EA3C0A9CADBEA1 /* DBHelper.h */,
+				BCBFDF5B5954F0BE75224FF8 /* DBHelper.m */,
+				BCBFDB102869FE126961C099 /* NoteFolderHelper.h */,
+				BCBFDBF103B57F0EDCE16BCC /* NoteFolderHelper.m */,
+				BCBFD61724F4C1533731949E /* DBConfig.m */,
+				BCBFD41A200E88EF0A715CCD /* DBConfig.h */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		BCBFD6CD68A7D6455703D88E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFDAC290167FFDFCEB7DCC /* P-Note.app */,
+				BCBFD6F08C417B2A643EE2D7 /* P-NoteTests.xctest */,
+				BCBFDC48DDED0014846ABADF /* P-NoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCBFD8014C2925FC26BDE1AE /* PwdDialog */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFDF092526B20F48C98E7C /* PwdInputView.h */,
+				BCBFD22BE88A40B8739AA45E /* PwdInputView.m */,
+				AA556B351CBBA41C00D229BD /* PwdDialogView.h */,
+				AA556B361CBBA41C00D229BD /* PwdDialogView.m */,
+				AA556B381CBBA42900D229BD /* PwdDialogView.xib */,
+			);
+			path = PwdDialog;
+			sourceTree = "<group>";
+		};
+		BCBFD99592C94D068748E6A2 /* P-NoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFDB2A5EEDFF5882C533F6 /* Info.plist */,
+				BCBFDA2481C4833FF06F2E1F /* P_NoteUITests.m */,
+			);
+			path = "P-NoteUITests";
+			sourceTree = "<group>";
+		};
+		BCBFDAC8470768992918244C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFDC4B4B47BA8E38960BBC /* FolderNoteCell.m */,
+				BCBFD1E75E3701CFF5949BC6 /* FolderNoteCell.h */,
+				AAC84DDD1CB6599A00FD49DD /* FolderNoteCell.xib */,
+				BCBFD511C6362375CD6AA79D /* FDAlertView.h */,
+				BCBFDA88A2B03F4B2ED37807 /* FDAlertView.m */,
+				AA3B4FF31CB7B1A4009DC771 /* AddFolderView.xib */,
+				BCBFD7EBFC527595F8EE1AB3 /* AddFolderView.m */,
+				BCBFD42FBC5FEA0AE89405A5 /* AddFolderView.h */,
+				AA3443991CB9013A003803B2 /* NoteCell.h */,
+				AA34439A1CB9013A003803B2 /* NoteCell.m */,
+				AA34439B1CB9013A003803B2 /* NoteCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCBFDC2ED23855A2224DB380 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFDA2666ECBFE3CE696344 /* StringUtils.m */,
+				BCBFD1BA7C0E1B0E96767CF7 /* StringUtils.h */,
+				BCBFDABB4021051D983A37B8 /* Tools.m */,
+				BCBFD5DFAF88E813A7E5D254 /* Tools.h */,
+				BCBFD059ADA4E05C26DAC6F7 /* UserDefaultsUtils.m */,
+				BCBFDB3E51BD8F05F7B8F0AC /* UserDefaultsUtils.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		BCBFDCCE11FEAD63F7CD2E9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFDCA7D03CA491DD66F01C /* NoteFolder.m */,
+				BCBFDD7E65B6B8D2116031F5 /* NoteFolder.h */,
+				BCBFD9DAD12B0565E020CC5A /* Note.m */,
+				BCBFD9FC52669CEA2374F13C /* Note.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCBFDE0D2B5F3B95C7FE8BC8 /* P-NoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFD1224AD34507D330AF34 /* Info.plist */,
+				BCBFDBF68989A1959BCB7341 /* P_NoteTests.m */,
+			);
+			path = "P-NoteTests";
+			sourceTree = "<group>";
+		};
+		BCBFDFF3605D22A796E0DEEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCBFDF63BE39C50205B04480 /* MainViewController.m */,
+				BCBFD33F072B6D35490BFEB4 /* MainViewController.h */,
+				BCBFD1D6E6CBDDCE6565DDD5 /* common */,
+				BCBFDF908B8C5CB99A8CBBE7 /* NotesListViewController.h */,
+				BCBFD86B7953C55770E5A71F /* NotesListViewController.m */,
+				AA3443921CB8DF01003803B2 /* EditNoteViewController.h */,
+				AA3443931CB8DF01003803B2 /* EditNoteViewController.m */,
+				AA3443941CB8DF01003803B2 /* EditNoteViewController.xib */,
+				AA3443AD1CB9133C003803B2 /* SettingViewController.h */,
+				AA3443AE1CB9133C003803B2 /* SettingViewController.m */,
+				BCBFD8B80131B8C61CCE5A6A /* AboutViewController.m */,
+				BCBFDF480CD9D5E89E8368E7 /* AboutViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7B6AA1332C641826B7EFF32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FAD8DAE085D340FE216AC64 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCBFD1AC54C8F2A97AF8DD1E /* P-NoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBFD095387DDA1EB4106739 /* Build configuration list for PBXNativeTarget "P-NoteTests" */;
+			buildPhases = (
+				BCBFD95BF6BA15FB9E726410 /* Sources */,
+				BCBFD0FE3EA9EE8B98D3A9B7 /* Frameworks */,
+				BCBFD1883BD937A662D1B6E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCBFD836CB00BCC84A3AA66A /* PBXTargetDependency */,
+			);
+			name = "P-NoteTests";
+			productName = "P-NoteTests";
+			productReference = BCBFD6F08C417B2A643EE2D7 /* P-NoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCBFD8269A5254697BBDBFFE /* P-Note */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBFD033D6278E623659079C /* Build configuration list for PBXNativeTarget "P-Note" */;
+			buildPhases = (
+				D06DED2F0F8F1FEB44DB25A6 /* Check Pods Manifest.lock */,
+				BCBFD8FD8D8C9F2284685740 /* Sources */,
+				BCBFDC3D90263D17DA8C82A3 /* Frameworks */,
+				BCBFDDFF5842FF8365624590 /* Resources */,
+				130BA2900B7A51693D954B1C /* Embed Pods Frameworks */,
+				08BC6F3549C49C5A9B8AE9E0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "P-Note";
+			productName = "P-Note";
+			productReference = BCBFDAC290167FFDFCEB7DCC /* P-Note.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCBFDCC60F7D19E58B5C0C86 /* P-NoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBFDE0106F9CF1C8E30DC90 /* Build configuration list for PBXNativeTarget "P-NoteUITests" */;
+			buildPhases = (
+				BCBFD5C9250F8DE16AD6DE8A /* Sources */,
+				BCBFD2B56C93FE518975A7C0 /* Frameworks */,
+				BCBFD70E98FE46CE4B4820AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCBFD17C48BA3096685C52A5 /* PBXTargetDependency */,
+			);
+			name = "P-NoteUITests";
+			productName = "P-NoteUITests";
+			productReference = BCBFDC48DDED0014846ABADF /* P-NoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCBFD17F759EFF8A663CD8AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = yxfang;
+			};
+			buildConfigurationList = BCBFDF5C5B75652C08F5364F /* Build configuration list for PBXProject "P-Note" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BCBFD0230A1FC8B525BB0DB6;
+			productRefGroup = BCBFD6CD68A7D6455703D88E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCBFD8269A5254697BBDBFFE /* P-Note */,
+				BCBFD1AC54C8F2A97AF8DD1E /* P-NoteTests */,
+				BCBFDCC60F7D19E58B5C0C86 /* P-NoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCBFD1883BD937A662D1B6E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBFD55FBB610B0FB82BBD2C /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBFD70E98FE46CE4B4820AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBFD615E795D4F7232C6E79 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBFDDFF5842FF8365624590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3B4FF41CB7B1A4009DC771 /* AddFolderView.xib in Resources */,
+				AA3443961CB8DF01003803B2 /* EditNoteViewController.xib in Resources */,
+				AAC84DDE1CB6599A00FD49DD /* FolderNoteCell.xib in Resources */,
+				AA34439D1CB9013A003803B2 /* NoteCell.xib in Resources */,
+				BCBFD9F5D8E89ADCF62487D2 /* Info.plist in Resources */,
+				AA556B391CBBA42900D229BD /* PwdDialogView.xib in Resources */,
+				BCBFD8C7B61854A09637D06D /* Assets.xcassets in Resources */,
+				BCBFD085088B097FE9940CC7 /* LaunchScreen.storyboard in Resources */,
+				BCBFD11D33B4364C4F92DC03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08BC6F3549C49C5A9B8AE9E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		130BA2900B7A51693D954B1C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D06DED2F0F8F1FEB44DB25A6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCBFD5C9250F8DE16AD6DE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBFD5E282CDC79E27401AC8 /* P_NoteUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBFD8FD8D8C9F2284685740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBFDCEA5754021C1F694F15 /* main.m in Sources */,
+				BCBFDD9E7F57EB81B698B96C /* AppDelegate.m in Sources */,
+				BCBFDDCD80540BE87AE82AA7 /* MainViewController.m in Sources */,
+				BCBFDCC4A7848D8922E74DEA /* NoteFolder.m in Sources */,
+				BCBFD17187D9A531BA92D48D /* BaseViewController.m in Sources */,
+				AA3443B01CB9133C003803B2 /* SettingViewController.m in Sources */,
+				BCBFDCE20973006DD0EEF90C /* FolderNoteCell.m in Sources */,
+				BCBFDEFED0DBC7E12B0057CB /* FDAlertView.m in Sources */,
+				BCBFD1165E8591D3F622F6D7 /* AddFolderView.m in Sources */,
+				AA3443951CB8DF01003803B2 /* EditNoteViewController.m in Sources */,
+				AA556B371CBBA41C00D229BD /* PwdDialogView.m in Sources */,
+				BCBFD224FAE09AF5F1711437 /* StringUtils.m in Sources */,
+				AA34439C1CB9013A003803B2 /* NoteCell.m in Sources */,
+				BCBFD77D660EE4DBF9B86AD9 /* NotesListViewController.m in Sources */,
+				BCBFD355F95F32AF735B40F8 /* Note.m in Sources */,
+				BCBFDB3D586E5E287C1FB06B /* NoteHelper.m in Sources */,
+				BCBFDC1EB64197F06275D55B /* DBHelper.m in Sources */,
+				BCBFD40B4E935BA16FB040B9 /* NoteFolderHelper.m in Sources */,
+				BCBFDD78F92F5270DC165F91 /* Tools.m in Sources */,
+				BCBFD7F474754EF49EA59263 /* MBProgressHUD.m in Sources */,
+				BCBFD10AE70E9C690D13962A /* PwdInputView.m in Sources */,
+				BCBFDA2A73D35C76742538E1 /* DBConfig.m in Sources */,
+				BCBFDEB2357819355D55E939 /* AboutViewController.m in Sources */,
+				BCBFDD007B9AD6CFF586CEB4 /* UserDefaultsUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBFD95BF6BA15FB9E726410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBFD4EE09CF8970B4AA4B5B /* P_NoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCBFD17C48BA3096685C52A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCBFD8269A5254697BBDBFFE /* P-Note */;
+			targetProxy = BCBFD08EA071FC6ED2423221 /* PBXContainerItemProxy */;
+		};
+		BCBFD836CB00BCC84A3AA66A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCBFD8269A5254697BBDBFFE /* P-Note */;
+			targetProxy = BCBFDB0F9FAB9E71F4AD256B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCBFD0CAA564C5E01212C883 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCBFD1F2BAAD386B014C9F35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCBFDA0BA2EE0F6EAC6591EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCBFDF9FDC02EAEAC1C78370 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCBFD2A6DE2DCF6D72ACCFD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/P-Note.app/P-Note";
+				INFOPLIST_FILE = "P-NoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yxfang.pnote.P-NoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		BCBFD4A1688B6F045BF1B063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/P-Note.app/P-Note";
+				INFOPLIST_FILE = "P-NoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yxfang.pnote.P-NoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		BCBFD4FC96371376FFDD32A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E4AEE7D4DA9AC62612A9B7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "P-Note/P-Note-Prefix.pch";
+				INFOPLIST_FILE = "P-Note/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yxfang.pnote.P-Note";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCBFD75703BFE264C7A4C323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCBFDA747B2CC1751C43F800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/P-Note.app/P-Note";
+				INFOPLIST_FILE = "P-NoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yxfang.pnote.P-NoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		BCBFDC933BA305D9CF8E09B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/P-Note.app/P-Note";
+				INFOPLIST_FILE = "P-NoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yxfang.pnote.P-NoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		BCBFDE5A8FB62D5F55DA27D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCBFDE9DA5D96A213481567D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B354989D73BA540C6C945BE3 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "P-Note/P-Note-Prefix.pch";
+				INFOPLIST_FILE = "P-Note/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yxfang.pnote.P-Note";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCBFD033D6278E623659079C /* Build configuration list for PBXNativeTarget "P-Note" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBFDE9DA5D96A213481567D /* Debug */,
+				BCBFD4FC96371376FFDD32A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBFD095387DDA1EB4106739 /* Build configuration list for PBXNativeTarget "P-NoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBFD4A1688B6F045BF1B063 /* Debug */,
+				BCBFDA747B2CC1751C43F800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBFDE0106F9CF1C8E30DC90 /* Build configuration list for PBXNativeTarget "P-NoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBFDC933BA305D9CF8E09B1 /* Debug */,
+				BCBFD2A6DE2DCF6D72ACCFD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBFDF5C5B75652C08F5364F /* Build configuration list for PBXProject "P-Note" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBFDE5A8FB62D5F55DA27D7 /* Debug */,
+				BCBFD75703BFE264C7A4C323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCBFD17F759EFF8A663CD8AB /* Project object */;
+}

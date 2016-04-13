@@ -1,0 +1,27 @@
+//
+//  AppPCH.pch
+//  P-Note
+//
+//  Created by yaxiongfang on 4/8/16.
+//  Copyright © 2016 yxfang. All rights reserved.
+//
+
+#ifndef AppPCH_pch
+#define AppPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* AppPCH_pch */
+
+#if DEBUG == 0
+#define DebugLog(...)
+#elif DEBUG == 1
+#define DebugLog(...) NSLog(__VA_ARGS__)
+#endif
+
+#import "Screen.h"
+#import "Colors.h"
+#import "MBProgressHUD.h"
+
+#import "Tools.h"
