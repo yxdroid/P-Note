@@ -45,6 +45,10 @@
                                                  name:@"UpdateNoteList" object:nil];
 }
 
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 /**
  * 初始化tableview
  */

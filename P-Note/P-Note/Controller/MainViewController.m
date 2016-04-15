@@ -58,7 +58,7 @@
                    name:@"UpdateFolderCollectionView" object:nil];
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
+- (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -93,6 +93,7 @@
     pSwitch = [UserDefaultsUtils getAppInfoForKeyBool:@"p_switch"];
     savePwd = [UserDefaultsUtils getAppInfoForKey:@"pwd"];
 
+    folderList = [[NSMutableArray alloc] init];
     _folderHelper = [[NoteFolderHelper alloc] init];
     [self selectAllFolders];
 }
@@ -101,7 +102,7 @@
 
     [folderList removeAllObjects];
 
-    folderList = [_folderHelper selectAllFolders];
+    [folderList addObjectsFromArray:[_folderHelper selectAllFolders]];
     NoteFolder *defaultFolder = [[NoteFolder alloc] init];
     defaultFolder.id = 0;
     defaultFolder.name = @"添加";
@@ -258,6 +259,9 @@
     }
         // 编辑模式
     else if (mode == 1) {
+        if (folder.id == 0) {
+            return;
+        }
         // 私密开关开启 并且 设置过密码
         if (pSwitch && ![StringUtils isEmpty:savePwd]) {
             [self openPwdInputDialog:nil andOnClicked:nil andCompletion:^(NSString *pwd) {
@@ -275,6 +279,9 @@
     }
         // 删除模式
     else if (mode == 2) {
+        if (folder.id == 0) {
+            return;
+        }
         [super openAlertDialog:@"删除分类也即将删除该分类所有记事,确定删除?" onClick:^(void) {
             // 私密开关开启 并且 设置过密码
             if (pSwitch && ![StringUtils isEmpty:savePwd]) {

@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/P-NoteUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-NoteUITests/P_NoteUITests.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-NoteTests/P_NoteTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-NoteTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/P-Note-Prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/AppDelegate.h" isTestSource="false" />
@@ -14,20 +16,16 @@
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Model/Note.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Model/Note.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Model/NoteFolder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBHelper.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteHelper.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteHelper.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBConfig.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBHelper.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteHelper.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBHelper.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteHelper.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteFolderHelper.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBConfig.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteFolderHelper.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/UserDefaultsUtils.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/StringUtils.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/StringUtils.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/Tools.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/UserDefaultsUtils.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/Tools.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/const/Colors.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/const/Screen.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/MBProgressHUD/MBProgressHUD.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/MBProgressHUD/MBProgressHUD.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdInputView.h" isTestSource="false" />
@@ -35,8 +33,12 @@
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdDialogView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdDialogView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdDialogView.xib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/const/Colors.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/const/Screen.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/UserDefaultsUtils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/StringUtils.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/StringUtils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/Tools.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/UserDefaultsUtils.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/Tools.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/View/AddFolderView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/View/FolderNoteCell.h" isTestSource="false" />
@@ -55,20 +57,18 @@
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/AboutViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/SettingViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/EditNoteViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/MainViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/SettingViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/EditNoteViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/MainViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/common/BaseViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/common/BaseViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/SettingViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/NotesListViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/MainViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/AboutViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/EditNoteViewController.xib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/MainViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/EditNoteViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/NotesListViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/NotesListViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-NoteTests/P_NoteTests.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-NoteTests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FMDB/FMDB-prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FMDB/FMDB-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FMDB/FMDB.xcconfig" isTestSource="false" />

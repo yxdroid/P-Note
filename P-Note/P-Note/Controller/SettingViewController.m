@@ -63,12 +63,15 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return switchValue ? 3 : 2;
+        return switchValue ? 2 : 1;
+    }
+    else if (section == 1) {
+        return 1;
     }
     return 2;
 }
@@ -99,7 +102,9 @@
                 cell.detailTextLabel.text = @"未设置";
             }
         }
-        else if (indexPath.row == 2) {
+    }
+    else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
             cell.textLabel.text = @"清空数据";
         }
     }
@@ -126,7 +131,9 @@
                 [self showSetPwdDialog];
             }
         }
-        else if (indexPath.row == 2) {
+    }
+    else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
             [self clearData];
         }
     }
@@ -169,7 +176,7 @@
             [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateFolderCollectionView" object:nil];
         }
         @catch (NSException *exception) {
-            [Tools showTip:self andMsg:@"数据清空成功"];
+            [Tools showTip:self andMsg:@"数据清空失败"];
             NSLog(@"Exception occurred: %@, %@", exception, [exception userInfo]);
         }
     }];
