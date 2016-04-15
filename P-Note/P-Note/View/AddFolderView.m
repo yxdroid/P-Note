@@ -6,14 +6,28 @@
 #import "AddFolderView.h"
 #import "FDAlertView.h"
 #import "MainViewController.h"
+#import "NoteFolder.h"
 
-@implementation AddFolderView
+@implementation AddFolderView {
+    // 标识是否私密
+    BOOL isPrivate;
+    int folderId;
+}
 
-
-- (void)init:(MainViewController *)controller andFrame:(CGRect)frame {
+- (void)init:(MainViewController *)controller andFrame:(CGRect)frame folder:(NoteFolder *)folder {
     self.controller = controller;
     self.frame = frame;
     self.edtName.delegate = self;
+
+    if (folder != nil) {
+        self.labelTitle.text = @"修改分类";
+        self.edtName.text = folder.name;
+        self.switchPrivate.on = isPrivate = folder.isPrivate;
+        folderId = folder.id;
+    }
+    else {
+        [self.edtName becomeFirstResponder];
+    }
 }
 
 - (IBAction)cancel:(id)sender {
@@ -32,8 +46,12 @@
         FDAlertView *alert = (FDAlertView *) self.superview;
         [alert hide];
 
-        [[self controller] addFlolder:name];
+        [[self controller] addOrUpdateFolder:folderId name:name andPrivate:isPrivate];
     }
+}
+
+- (IBAction)onSwitchChanged:(id)sender {
+    isPrivate = ((UISwitch *) sender).isOn;
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {

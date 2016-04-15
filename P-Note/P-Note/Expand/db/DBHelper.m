@@ -23,6 +23,8 @@ FMDatabase *db;
         _instance = [[super allocWithZone:NULL] init];
 
         db = [[FMDatabase alloc] initWithPath:[_instance getPath]];
+        [db setUserVersion:DB_VERSION];
+        
         if (![db open]) {
             dbIsOpen = false;
             DebugLog(@"数据库打开失败!");
@@ -82,6 +84,11 @@ FMDatabase *db;
 - (BOOL)update:(NSString *)sql {
     return [db executeUpdate:sql];
 }
+
+- (BOOL)columnExists:(NSString *)column inTableWithName:(NSString *)tableName {
+    return [db columnExists:column inTableWithName:tableName];
+}
+
 
 /**
  * 释放

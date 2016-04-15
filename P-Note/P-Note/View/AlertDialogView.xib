@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yBs-mN-DcV" customClass="AlertDialogView">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="169"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BEI-WQ-NoG">
+                    <rect key="frame" x="0.0" y="48" width="329" height="1"/>
+                    <color key="backgroundColor" red="0.91897062110000005" green="0.91897062110000005" blue="0.91897062110000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="faz-5a-xQx"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwJ-Zp-FxC">
+                    <rect key="frame" x="0.0" y="14" width="329" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="3Os-9T-fLW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzi-m1-hHB">
+                    <rect key="frame" x="30" y="121" width="275" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkN-65-Kb0">
+                            <rect key="frame" x="0.0" y="0.0" width="83" height="36"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="D1R-Pc-yn3"/>
+                                <constraint firstAttribute="width" constant="83" id="S1R-oA-Pob"/>
+                                <constraint firstAttribute="width" constant="83" id="vTO-sk-L8f"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="vTO-sk-L8f"/>
+                                    <exclude reference="D1R-Pc-yn3"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="onCancel:" destination="yBs-mN-DcV" eventType="touchUpInside" id="wiK-SC-g1m"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sie-E9-6c4">
+                            <rect key="frame" x="192" y="0.0" width="83" height="36"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.63529411759999999" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="UTQ-II-O7F"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="83" id="bjR-NB-rfO"/>
+                                <constraint firstAttribute="width" constant="83" id="ylE-La-ORq"/>
+                                <constraint firstAttribute="width" constant="83" id="z8v-12-eFz"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="UTQ-II-O7F"/>
+                                    <exclude reference="z8v-12-eFz"/>
+                                    <exclude reference="bjR-NB-rfO"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="onOk:" destination="yBs-mN-DcV" eventType="touchUpInside" id="Ums-fZ-f3h"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sie-E9-6c4" firstAttribute="baseline" secondItem="FkN-65-Kb0" secondAttribute="baseline" id="0Ox-qX-s2M"/>
+                        <constraint firstAttribute="trailing" secondItem="sie-E9-6c4" secondAttribute="trailing" id="1Bp-gb-z2d"/>
+                        <constraint firstItem="FkN-65-Kb0" firstAttribute="leading" secondItem="Tzi-m1-hHB" secondAttribute="leading" id="4m3-Yf-JZN"/>
+                        <constraint firstItem="sie-E9-6c4" firstAttribute="top" secondItem="Tzi-m1-hHB" secondAttribute="top" id="6Y2-ld-8Ix"/>
+                        <constraint firstItem="sie-E9-6c4" firstAttribute="leading" secondItem="FkN-65-Kb0" secondAttribute="trailing" constant="109" id="7Fi-C9-9BR"/>
+                        <constraint firstItem="FkN-65-Kb0" firstAttribute="firstBaseline" secondItem="sie-E9-6c4" secondAttribute="baseline" id="Dyy-1z-laI"/>
+                        <constraint firstAttribute="trailing" secondItem="sie-E9-6c4" secondAttribute="trailing" constant="40" id="M3c-Y9-O5z"/>
+                        <constraint firstAttribute="bottom" secondItem="sie-E9-6c4" secondAttribute="bottom" id="Q7l-ic-m7V"/>
+                        <constraint firstItem="FkN-65-Kb0" firstAttribute="top" secondItem="Tzi-m1-hHB" secondAttribute="top" id="Rds-ly-HRg"/>
+                        <constraint firstAttribute="height" constant="34" id="fjv-hq-VPG"/>
+                        <constraint firstItem="FkN-65-Kb0" firstAttribute="firstBaseline" secondItem="sie-E9-6c4" secondAttribute="baseline" id="ghi-Dv-Ugx"/>
+                        <constraint firstItem="FkN-65-Kb0" firstAttribute="top" secondItem="sie-E9-6c4" secondAttribute="top" id="hgn-aj-bea"/>
+                        <constraint firstItem="sie-E9-6c4" firstAttribute="leading" secondItem="FkN-65-Kb0" secondAttribute="trailing" constant="36" id="jwf-hv-hMy"/>
+                        <constraint firstItem="FkN-65-Kb0" firstAttribute="baseline" secondItem="sie-E9-6c4" secondAttribute="firstBaseline" id="owq-kY-sZd"/>
+                        <constraint firstAttribute="width" constant="279" id="zct-yU-E2Y"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fjv-hq-VPG"/>
+                            <exclude reference="zct-yU-E2Y"/>
+                            <exclude reference="ghi-Dv-Ugx"/>
+                            <exclude reference="jwf-hv-hMy"/>
+                            <exclude reference="M3c-Y9-O5z"/>
+                            <exclude reference="0Ox-qX-s2M"/>
+                            <exclude reference="7Fi-C9-9BR"/>
+                            <exclude reference="6Y2-ld-8Ix"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcd-sx-cZi">
+                    <rect key="frame" x="30" y="48" width="275" height="65"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BEI-WQ-NoG" secondAttribute="trailing" constant="4" id="02I-eo-ZuE"/>
+                <constraint firstItem="EwJ-Zp-FxC" firstAttribute="top" secondItem="yBs-mN-DcV" secondAttribute="top" constant="14" id="0g5-1e-JoD"/>
+                <constraint firstItem="EwJ-Zp-FxC" firstAttribute="leading" secondItem="yBs-mN-DcV" secondAttribute="leading" id="2J6-Dw-5Q8"/>
+                <constraint firstAttribute="trailing" secondItem="Tzi-m1-hHB" secondAttribute="trailing" constant="28" id="3TR-XX-VZ6"/>
+                <constraint firstItem="Tzi-m1-hHB" firstAttribute="top" secondItem="yBs-mN-DcV" secondAttribute="top" constant="121" id="BET-6f-Wdi"/>
+                <constraint firstItem="Tzi-m1-hHB" firstAttribute="leading" secondItem="yBs-mN-DcV" secondAttribute="leading" constant="30" id="BkE-NC-wmk"/>
+                <constraint firstItem="Tzi-m1-hHB" firstAttribute="top" secondItem="Zcd-sx-cZi" secondAttribute="bottom" constant="8" symbolic="YES" id="H4P-6d-pqh"/>
+                <constraint firstItem="BEI-WQ-NoG" firstAttribute="top" secondItem="EwJ-Zp-FxC" secondAttribute="bottom" constant="13.5" id="HGo-lZ-emQ"/>
+                <constraint firstItem="Zcd-sx-cZi" firstAttribute="leading" secondItem="Tzi-m1-hHB" secondAttribute="leading" id="SVh-5s-udU"/>
+                <constraint firstAttribute="bottom" secondItem="Tzi-m1-hHB" secondAttribute="bottom" constant="11" id="Vtz-QO-oJ6"/>
+                <constraint firstAttribute="trailing" secondItem="EwJ-Zp-FxC" secondAttribute="trailing" constant="4" id="WkK-8i-bcI"/>
+                <constraint firstAttribute="trailing" secondItem="Tzi-m1-hHB" secondAttribute="trailing" constant="28" id="XBF-UQ-Ju4"/>
+                <constraint firstItem="BEI-WQ-NoG" firstAttribute="leading" secondItem="yBs-mN-DcV" secondAttribute="leading" id="eDu-4H-edM"/>
+                <constraint firstItem="Zcd-sx-cZi" firstAttribute="top" secondItem="BEI-WQ-NoG" secondAttribute="top" id="fDp-jr-hGr"/>
+                <constraint firstItem="EwJ-Zp-FxC" firstAttribute="top" secondItem="yBs-mN-DcV" secondAttribute="top" constant="5" id="ipj-gv-PiW"/>
+                <constraint firstItem="Zcd-sx-cZi" firstAttribute="trailing" secondItem="Tzi-m1-hHB" secondAttribute="trailing" id="mQk-E0-n7B"/>
+                <constraint firstItem="Tzi-m1-hHB" firstAttribute="bottom" secondItem="yBs-mN-DcV" secondAttribute="bottomMargin" constant="-4" id="y3C-yN-IPX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ipj-gv-PiW"/>
+                    <exclude reference="Vtz-QO-oJ6"/>
+                    <exclude reference="XBF-UQ-Ju4"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="labelMsg" destination="Zcd-sx-cZi" id="z2P-lE-aay"/>
+            </connections>
+            <point key="canvasLocation" x="349.5" y="37.5"/>
+        </view>
+    </objects>
+</document>

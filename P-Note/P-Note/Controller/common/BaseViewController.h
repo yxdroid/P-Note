@@ -5,6 +5,7 @@
 //
 #import <UIKit/UIKit.h>
 #import "PwdDialogView.h"
+#import "AlertDialogView.h"
 
 
 @interface BaseViewController : UIViewController
@@ -28,5 +29,10 @@
  * 打开密码输入对话框
  */
 - (void)openPwdInputDialog:(NSString *)title andOnClicked:(RightTopBtnOnClicked)onClicked andCompletion:(InputCompletion)onInputComletion;
+
+/**
+ * 弹出询问对话框
+ */
+-(void)openAlertDialog:(NSString *)msg onClick:(AlertDialogOnOk) onOk;
 
 @end

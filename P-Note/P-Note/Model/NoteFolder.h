@@ -9,6 +9,7 @@
 @interface NoteFolder : NSObject
 
 @property int id;
+@property BOOL isPrivate;
 @property(nonatomic, strong) NSString *name;
 
 @end

@@ -45,4 +45,13 @@
     [alert show];
 }
 
+- (void)openAlertDialog:(NSString *)msg onClick:(AlertDialogOnOk)onOk {
+    FDAlertView *alert = [[FDAlertView alloc] init];
+    AlertDialogView *contentView = [[NSBundle mainBundle] loadNibNamed:@"AlertDialogView" owner:nil options:nil].lastObject;
+    [contentView initWitchMsg:CGRectMake(0, 0, 270, 169) msg:msg onClick:onOk];
+    alert.contentView = contentView;
+    [alert show];
+}
+
+
 @end

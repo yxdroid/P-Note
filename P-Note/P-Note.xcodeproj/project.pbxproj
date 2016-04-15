@@ -16,6 +16,8 @@
 		AA3B4FF41CB7B1A4009DC771 /* AddFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3B4FF31CB7B1A4009DC771 /* AddFolderView.xib */; };
 		AA556B371CBBA41C00D229BD /* PwdDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA556B361CBBA41C00D229BD /* PwdDialogView.m */; };
 		AA556B391CBBA42900D229BD /* PwdDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA556B381CBBA42900D229BD /* PwdDialogView.xib */; };
+		AA78DA221CC08610003B285D /* AlertDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78DA211CC08610003B285D /* AlertDialogView.m */; };
+		AA78DA241CC08636003B285D /* AlertDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA78DA231CC08636003B285D /* AlertDialogView.xib */; };
 		AAC84DDE1CB6599A00FD49DD /* FolderNoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC84DDD1CB6599A00FD49DD /* FolderNoteCell.xib */; };
 		BCBFD085088B097FE9940CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBFDA0BA2EE0F6EAC6591EE /* LaunchScreen.storyboard */; };
 		BCBFD10AE70E9C690D13962A /* PwdInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBFD22BE88A40B8739AA45E /* PwdInputView.m */; };
@@ -80,6 +82,9 @@
 		AA556B351CBBA41C00D229BD /* PwdDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwdDialogView.h; sourceTree = "<group>"; };
 		AA556B361CBBA41C00D229BD /* PwdDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwdDialogView.m; sourceTree = "<group>"; };
 		AA556B381CBBA42900D229BD /* PwdDialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PwdDialogView.xib; sourceTree = "<group>"; };
+		AA78DA201CC08610003B285D /* AlertDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertDialogView.h; sourceTree = "<group>"; };
+		AA78DA211CC08610003B285D /* AlertDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertDialogView.m; sourceTree = "<group>"; };
+		AA78DA231CC08636003B285D /* AlertDialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertDialogView.xib; sourceTree = "<group>"; };
 		AAC84DDD1CB6599A00FD49DD /* FolderNoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FolderNoteCell.xib; sourceTree = "<group>"; };
 		B354989D73BA540C6C945BE3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBFD058869AF40AD53BF2D0 /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
@@ -317,6 +322,9 @@
 				AA3443991CB9013A003803B2 /* NoteCell.h */,
 				AA34439A1CB9013A003803B2 /* NoteCell.m */,
 				AA34439B1CB9013A003803B2 /* NoteCell.xib */,
+				AA78DA201CC08610003B285D /* AlertDialogView.h */,
+				AA78DA211CC08610003B285D /* AlertDialogView.m */,
+				AA78DA231CC08636003B285D /* AlertDialogView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -489,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3B4FF41CB7B1A4009DC771 /* AddFolderView.xib in Resources */,
+				AA78DA241CC08636003B285D /* AlertDialogView.xib in Resources */,
 				AA3443961CB8DF01003803B2 /* EditNoteViewController.xib in Resources */,
 				AAC84DDE1CB6599A00FD49DD /* FolderNoteCell.xib in Resources */,
 				AA34439D1CB9013A003803B2 /* NoteCell.xib in Resources */,
@@ -580,6 +589,7 @@
 				BCBFD355F95F32AF735B40F8 /* Note.m in Sources */,
 				BCBFDB3D586E5E287C1FB06B /* NoteHelper.m in Sources */,
 				BCBFDC1EB64197F06275D55B /* DBHelper.m in Sources */,
+				AA78DA221CC08610003B285D /* AlertDialogView.m in Sources */,
 				BCBFD40B4E935BA16FB040B9 /* NoteFolderHelper.m in Sources */,
 				BCBFDD78F92F5270DC165F91 /* Tools.m in Sources */,
 				BCBFD7F474754EF49EA59263 /* MBProgressHUD.m in Sources */,

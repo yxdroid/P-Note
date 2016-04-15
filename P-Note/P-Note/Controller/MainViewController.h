@@ -17,7 +17,7 @@
 /**
  * 添加分类目录
  */
--(void) addFlolder:(NSString *)name;
+- (void)addOrUpdateFolder:(int)id name:(NSString *)name andPrivate:(BOOL)isPrivate;
 
 @end
 

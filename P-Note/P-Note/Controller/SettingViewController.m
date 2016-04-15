@@ -8,6 +8,7 @@
 
 #import "SettingViewController.h"
 #import "AboutViewController.h"
+#import "NoteFolderHelper.h"
 
 @implementation SettingViewController {
     UITableView *_tableView;
@@ -67,7 +68,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return switchValue ? 2 : 1;
+        return switchValue ? 3 : 2;
     }
     return 2;
 }
@@ -98,6 +99,9 @@
                 cell.detailTextLabel.text = @"未设置";
             }
         }
+        else if (indexPath.row == 2) {
+            cell.textLabel.text = @"清空数据";
+        }
     }
     else {
         if (indexPath.row == 0) {
@@ -113,12 +117,17 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0 && indexPath.row == 1) {
-        if (hasPwd && !checkPass) {
-            [self checkOldPwd];
+    if (indexPath.section == 0) {
+        if (indexPath.row == 1) {
+            if (hasPwd && !checkPass) {
+                [self checkOldPwd];
+            }
+            else {
+                [self showSetPwdDialog];
+            }
         }
-        else {
-            [self showSetPwdDialog];
+        else if (indexPath.row == 2) {
+            [self clearData];
         }
     }
     else if (indexPath.section == 1 && indexPath.row == 1) {
@@ -126,6 +135,44 @@
         AboutViewController *aboutViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"AboutViewController"];
         [self.navigationController pushViewController:aboutViewController animated:true];
     }
+}
+
+/**
+ * 判断是否设置私密开关 清空数据
+ */
+- (void)clearData {
+    // 私密开关开启 并且 设置过密码
+    if (switchValue && hasPwd) {
+        [self openPwdInputDialog:nil andOnClicked:nil andCompletion:^(NSString *pwd) {
+            if ([pwd isEqualToString:savedPwd]) {
+                [self doClearData];
+            }
+            else {
+                [Tools showTip:self andMsg:@"密码不正确"];
+            }
+        }];
+    }
+    else {
+        [self doClearData];
+    }
+}
+
+/**
+ * 执行清空数据
+ */
+- (void)doClearData {
+    [super openAlertDialog:@"确定清空所有数据?" onClick:^(void) {
+        @try {
+            [[[NoteFolderHelper alloc] init] deleteAll];
+            [Tools showTip:self andMsg:@"数据清空成功"];
+            // 成功 发送更新列表通知
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateFolderCollectionView" object:nil];
+        }
+        @catch (NSException *exception) {
+            [Tools showTip:self andMsg:@"数据清空成功"];
+            NSLog(@"Exception occurred: %@, %@", exception, [exception userInfo]);
+        }
+    }];
 }
 
 - (void)checkOldPwd {

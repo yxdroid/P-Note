@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditNoteViewController">
@@ -26,11 +27,8 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="92g-B6-duE">
-                    <rect key="frame" x="10" y="60" width="300" height="187"/>
+                    <rect key="frame" x="10" y="60" width="300" height="500"/>
                     <color key="backgroundColor" red="0.91897062110000005" green="0.91897062110000005" blue="0.91897062110000005" alpha="0.14644204721362228" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="187" id="BBx-hh-Xue"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     <userDefinedRuntimeAttributes>
@@ -42,12 +40,13 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="92g-B6-duE" firstAttribute="leading" secondItem="25A-Vn-XaJ" secondAttribute="leading" id="7aI-XC-ct6"/>
                 <constraint firstAttribute="trailing" secondItem="25A-Vn-XaJ" secondAttribute="trailing" constant="10" id="8EB-GF-wL9"/>
-                <constraint firstItem="92g-B6-duE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Go4-3t-fUW"/>
                 <constraint firstItem="25A-Vn-XaJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="VuF-dx-3FX"/>
+                <constraint firstItem="92g-B6-duE" firstAttribute="trailing" secondItem="25A-Vn-XaJ" secondAttribute="trailing" id="XWq-HE-TiD"/>
                 <constraint firstItem="25A-Vn-XaJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="YLV-7F-0GJ"/>
-                <constraint firstItem="92g-B6-duE" firstAttribute="trailing" secondItem="25A-Vn-XaJ" secondAttribute="trailing" id="ZPS-9c-khc"/>
-                <constraint firstItem="92g-B6-duE" firstAttribute="top" secondItem="25A-Vn-XaJ" secondAttribute="bottom" constant="10" id="rdj-qM-as1"/>
+                <constraint firstItem="92g-B6-duE" firstAttribute="top" secondItem="25A-Vn-XaJ" secondAttribute="bottom" constant="10" id="l1N-Un-a7m"/>
+                <constraint firstItem="92g-B6-duE" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" id="no6-Vt-1hL"/>
             </constraints>
             <point key="canvasLocation" x="201" y="277"/>
         </view>

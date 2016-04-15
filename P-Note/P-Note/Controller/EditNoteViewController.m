@@ -38,6 +38,39 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    //注册通知,监听键盘出现
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleKeyboardDidShow:)
+                                                 name:UIKeyboardDidShowNotification
+                                               object:nil];
+    //注册通知，监听键盘消失事件
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleKeyboardDidHidden)
+                                                 name:UIKeyboardDidHideNotification
+                                               object:nil];
+    [super viewWillAppear:YES];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+//监听事件
+- (void)handleKeyboardDidShow:(NSNotification *)paramNotification {
+    //获取键盘高度
+    NSValue *keyboardRectAsObject = [[paramNotification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey];
+
+    CGRect keyboardRect;
+    [keyboardRectAsObject getValue:&keyboardRect];
+
+    self.edtContent.contentInset = UIEdgeInsetsMake(0, 0, keyboardRect.size.height, 0);
+}
+
+- (void)handleKeyboardDidHidden {
+    self.edtContent.contentInset = UIEdgeInsetsZero;
+}
+
 - (void)navigationRightBtnClick {
     NSString *title = _edtTitle.text;
     NSString *content = _edtContent.text;
@@ -63,7 +96,7 @@
             [_edtContent resignFirstResponder];
 
             // 修改成功 发送更新列表通知
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"updateNoteList" object:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateNoteList" object:nil];
         }
         else {
             [Tools showTip:self andMsg:@"保存失败"];
@@ -76,7 +109,7 @@
             [_edtContent resignFirstResponder];
 
             // 添加成功 发送更新列表通知
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"updateNoteList" object:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateNoteList" object:nil];
 
             _edtTitle.text = @"";
             _edtContent.text = @"";

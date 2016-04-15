@@ -29,4 +29,9 @@
  */
 - (BOOL)update:(NSString *)sql;
 
+/**
+ * 判断表里是否存在该字段
+ */
+- (BOOL)columnExists:(NSString *)column inTableWithName:(NSString *)tableName;
+
 @end

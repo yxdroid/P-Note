@@ -15,6 +15,21 @@
 /**
  * 添加一个分类目录
  */
--(BOOL) addFolder:(NSString *)name;
+- (BOOL)addFolder:(NSString *)name andPrivate:(BOOL)isPrivate;
+
+/**
+ * 编辑修改分类目录
+ */
+-(BOOL) updateFolder:(int)id name:(NSString *)name andPrivate:(BOOL)isPrivate;
+
+/**
+ * 删除分类
+ */
+-(void) deleteFolder:(int)id;
+
+/**
+ * 清空所有
+ */
+-(void) deleteAll;
 
 @end
