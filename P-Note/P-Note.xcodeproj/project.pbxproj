@@ -455,6 +455,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = yxfang;
+				TargetAttributes = {
+					BCBFD8269A5254697BBDBFFE = {
+						DevelopmentTeam = 6YKQ77YGRF;
+					};
+				};
 			};
 			buildConfigurationList = BCBFDF5C5B75652C08F5364F /* Build configuration list for PBXProject "P-Note" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -673,6 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "P-Note/P-Note-Prefix.pch";
 				INFOPLIST_FILE = "P-Note/Info.plist";
@@ -794,6 +800,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "P-Note/P-Note-Prefix.pch";
 				INFOPLIST_FILE = "P-Note/Info.plist";

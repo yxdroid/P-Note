@@ -137,7 +137,7 @@
             [self clearData];
         }
     }
-    else if (indexPath.section == 1 && indexPath.row == 1) {
+    else if (indexPath.section == 2 && indexPath.row == 1) {
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         AboutViewController *aboutViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"AboutViewController"];
         [self.navigationController pushViewController:aboutViewController animated:true];

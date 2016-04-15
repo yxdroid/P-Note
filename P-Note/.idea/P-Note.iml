@@ -16,11 +16,11 @@
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Model/Note.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Model/Note.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Model/NoteFolder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBHelper.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteHelper.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteHelper.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBConfig.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBHelper.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteHelper.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBHelper.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteHelper.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteFolderHelper.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/DBConfig.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/db/NoteFolderHelper.h" isTestSource="false" />
@@ -28,9 +28,9 @@
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/const/Screen.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/MBProgressHUD/MBProgressHUD.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/MBProgressHUD/MBProgressHUD.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdDialogView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdInputView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdInputView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdDialogView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdDialogView.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/view/PwdDialog/PwdDialogView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Expand/utils/UserDefaultsUtils.h" isTestSource="false" />
@@ -57,14 +57,14 @@
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/AboutViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/SettingViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/EditNoteViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/MainViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/common/BaseViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/common/BaseViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/SettingViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/EditNoteViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/MainViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/common/BaseViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/common/BaseViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/AboutViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/EditNoteViewController.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/MainViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/NotesListViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Controller/NotesListViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/P-Note/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />

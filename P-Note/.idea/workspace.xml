@@ -15,12 +15,35 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_7dda154e0364e63efdf21438d80155bd678ccced" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
   <component name="FavoritesManager">
     <favorites_list name="P-Note" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MainViewController.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P-Note/Controller/MainViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-315">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <folding>
+                <element signature="e#102#132#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingViewController.m" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/P-Note/Controller/SettingViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="141" column="43" selection-start-line="141" selection-start-column="43" selection-end-line="141" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,9 +96,9 @@
         <option value="$PROJECT_DIR$/P-Note/Expand/db/NoteFolderHelper.h" />
         <option value="$PROJECT_DIR$/P-Note/Expand/db/NoteFolderHelper.m" />
         <option value="$PROJECT_DIR$/P-Note/Controller/EditNoteViewController.m" />
-        <option value="$PROJECT_DIR$/P-Note/Controller/SettingViewController.m" />
         <option value="$PROJECT_DIR$/P-Note/Controller/NotesListViewController.m" />
         <option value="$PROJECT_DIR$/P-Note/Controller/MainViewController.m" />
+        <option value="$PROJECT_DIR$/P-Note/Controller/SettingViewController.m" />
       </list>
     </option>
   </component>
@@ -378,7 +401,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22716442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -432,11 +455,6 @@
           <url>file://$PROJECT_DIR$/P-Note/Expand/utils/UserDefaultsUtils.m</url>
           <line>25</line>
           <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/P-Note/Controller/MainViewController.m</url>
-          <line>234</line>
-          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -806,16 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P-Note/Controller/SettingViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="175" column="99" selection-start-line="175" selection-start-column="73" selection-end-line="175" selection-end-column="99" />
-          <folding>
-            <element signature="e#143#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/P-Note/Expand/db/DBHelper.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-483">
@@ -842,8 +850,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/P-Note/Controller/MainViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="283" column="9" selection-start-line="283" selection-start-column="9" selection-end-line="283" selection-end-column="9" />
+        <state relative-caret-position="-315">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P-Note/Controller/SettingViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="141" column="43" selection-start-line="141" selection-start-column="43" selection-end-line="141" selection-end-column="43" />
           <folding />
         </state>
       </provider>
