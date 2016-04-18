@@ -53,7 +53,7 @@
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self removeObserver];
 }
 
 //监听事件
@@ -96,7 +96,7 @@
             [_edtContent resignFirstResponder];
 
             // 修改成功 发送更新列表通知
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateNoteList" object:nil];
+            [self postNotification:NOTIFICATION_UPDATE_NOTE obj:nil];
         }
         else {
             [Tools showTip:self andMsg:@"保存失败"];
@@ -109,7 +109,7 @@
             [_edtContent resignFirstResponder];
 
             // 添加成功 发送更新列表通知
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateNoteList" object:nil];
+            [self postNotification:NOTIFICATION_UPDATE_NOTE obj:nil];
 
             _edtTitle.text = @"";
             _edtContent.text = @"";

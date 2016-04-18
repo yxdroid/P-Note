@@ -53,5 +53,19 @@
     [alert show];
 }
 
+- (void)removeObserver {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)addObserver:(NSString *)name selector:(SEL)aselector {
+    [[NSNotificationCenter defaultCenter]
+            addObserver:self selector:aselector
+                   name:name object:nil];
+}
+
+- (void)postNotification:(NSString *)name obj:(id)obj {
+    [[NSNotificationCenter defaultCenter] postNotificationName:name object:obj];
+}
+
 
 @end

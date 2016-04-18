@@ -42,7 +42,7 @@
     [self selectAllNotesByFolderId];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selectAllNotesByFolderId)
-                                                 name:@"UpdateNoteList" object:nil];
+                                                 name:NOTIFICATION_UPDATE_NOTE object:nil];
 }
 
 -(void)dealloc {

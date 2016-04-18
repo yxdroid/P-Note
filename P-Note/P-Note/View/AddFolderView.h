@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UITextField *edtName;
 @property (weak, nonatomic) IBOutlet UISwitch *switchPrivate;
+@property (weak, nonatomic) IBOutlet UIButton *btnAdd;
 
 @property(nonatomic, strong) MainViewController *controller;
 

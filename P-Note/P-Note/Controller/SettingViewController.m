@@ -173,7 +173,7 @@
             [[[NoteFolderHelper alloc] init] deleteAll];
             [Tools showTip:self andMsg:@"数据清空成功"];
             // 成功 发送更新列表通知
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateFolderCollectionView" object:nil];
+            [self postNotification:NOTIFICATION_UPDATE_FOLDER obj:nil];
         }
         @catch (NSException *exception) {
             [Tools showTip:self andMsg:@"数据清空失败"];
@@ -194,7 +194,7 @@
 }
 
 /**
- * 弹出添加目录对话框
+ * 弹出设置密码对话框
  */
 - (void)showSetPwdDialog {
 
@@ -222,6 +222,7 @@
                 [_tableView reloadData];
                 [Tools showTip:self andMsg:@"密码设置成功"];
                 [UserDefaultsUtils saveAppInfoForObject:@"pwd" andValue:pwd];
+                [self postNotification:NOTIFICATION_UPDATE_SETTING obj:nil];
             }
         }
         DebugLog(@"andCompletion");
@@ -248,6 +249,9 @@
         switchValue = NO;
         [_tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationTop];
     }
+
+    [self postNotification:NOTIFICATION_UPDATE_SETTING obj:nil];
+
     [_tableView endUpdates];
 }
 

@@ -18,9 +18,11 @@
     self.controller = controller;
     self.frame = frame;
     self.edtName.delegate = self;
-
+    self.btnAdd.titleLabel.text = @"修改";
     if (folder != nil) {
-        self.labelTitle.text = @"修改分类";
+
+        [self.btnAdd setTitle:@"修改分类" forState:UIControlStateNormal];
+
         self.edtName.text = folder.name;
         self.switchPrivate.on = isPrivate = folder.isPrivate;
         folderId = folder.id;

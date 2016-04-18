@@ -42,6 +42,7 @@
         folder.name = [rs stringForColumn:@"name"];
         [list addObject:folder];
     }
+    [rs close];
     return list;
 }
 

@@ -37,7 +37,6 @@
 
     [self setTitle:@"P Note"];
 
-
     editBarItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:nil target:self action:@selector(editMode)];
     delBarItem = [[UIBarButtonItem alloc] initWithTitle:@"删除" style:nil target:self action:@selector(deleteMode)];
 
@@ -53,13 +52,12 @@
 
     [self initData];
 
-    [[NSNotificationCenter defaultCenter]
-            addObserver:self selector:@selector(selectAllFolders)
-                   name:@"UpdateFolderCollectionView" object:nil];
+    [self addObserver:NOTIFICATION_UPDATE_FOLDER selector:@selector(selectAllFolders)];
+    [self addObserver:NOTIFICATION_UPDATE_SETTING selector:@selector(updateSettingConfig)];
 }
 
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self removeObserver];
 }
 
 /**
@@ -89,15 +87,28 @@
     [self.view addSubview:self.collectionView];
 }
 
+/**
+ * 初始化数据
+ */
 - (void)initData {
-    pSwitch = [UserDefaultsUtils getAppInfoForKeyBool:@"p_switch"];
-    savePwd = [UserDefaultsUtils getAppInfoForKey:@"pwd"];
+    [self updateSettingConfig];
 
     folderList = [[NSMutableArray alloc] init];
     _folderHelper = [[NoteFolderHelper alloc] init];
     [self selectAllFolders];
 }
 
+/**
+ * 更新设置配置值
+ */
+- (void)updateSettingConfig {
+    pSwitch = [UserDefaultsUtils getAppInfoForKeyBool:@"p_switch"];
+    savePwd = [UserDefaultsUtils getAppInfoForKey:@"pwd"];
+}
+
+/**
+ * 查询所有分类目录
+ */
 - (void)selectAllFolders {
 
     [folderList removeAllObjects];
@@ -111,6 +122,9 @@
     [self.collectionView reloadData];
 }
 
+/**
+ * 添加和更新目录
+ */
 - (void)addOrUpdateFolder:(int)id name:(NSString *)name andPrivate:(BOOL)isPrivate {
 
     // 正常模式
@@ -141,7 +155,6 @@
     }
 
 }
-
 
 - (void)navigationRightBtnClick {
     SettingViewController *settingViewController = [[SettingViewController alloc] init];

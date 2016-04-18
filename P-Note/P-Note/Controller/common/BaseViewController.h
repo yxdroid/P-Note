@@ -7,6 +7,15 @@
 #import "PwdDialogView.h"
 #import "AlertDialogView.h"
 
+// 通知观察者 更新folder 列表
+#define NOTIFICATION_UPDATE_FOLDER @"UpdateFolderCollectionView"
+
+// 通知观察者 更新 设置配置信息
+#define NOTIFICATION_UPDATE_SETTING @"UpdateSetting"
+
+// 通知观察者 更新folder 列表
+#define NOTIFICATION_UPDATE_NOTE @"UpdateNoteList"
+
 
 @interface BaseViewController : UIViewController
 
@@ -33,6 +42,21 @@
 /**
  * 弹出询问对话框
  */
--(void)openAlertDialog:(NSString *)msg onClick:(AlertDialogOnOk) onOk;
+- (void)openAlertDialog:(NSString *)msg onClick:(AlertDialogOnOk)onOk;
+
+/**
+ * 移除观察者
+ */
+- (void)removeObserver;
+
+/**
+ * 添加一个观察者
+ */
+- (void)addObserver:(NSString *)name selector:(SEL)aselector;
+
+/**
+ * 给观察者发送更新通知
+ */
+- (void)postNotification:(NSString *)name obj:(id)obj;
 
 @end

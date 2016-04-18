@@ -217,6 +217,7 @@
                 </mask>
             </variation>
             <connections>
+                <outlet property="btnAdd" destination="w9j-PW-oLG" id="bns-Yg-Oin"/>
                 <outlet property="edtName" destination="egc-vE-KTY" id="hwH-kJ-9UI"/>
                 <outlet property="labelTitle" destination="F3S-ds-1pP" id="q9k-FJ-wVd"/>
                 <outlet property="switchPrivate" destination="Bd0-pB-nnp" id="2sO-p9-PfG"/>

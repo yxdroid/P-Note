@@ -42,6 +42,7 @@
         note.folderId = [rs intForColumn:@"folderId"];
         [list addObject:note];
     }
+    [rs close];
     return list;
 }
 
